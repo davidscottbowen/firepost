@@ -1,6 +1,16 @@
 /* Style the header */
 .header {
     background-color: #3B5998;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
 }
+
+.login {
+    padding: 0px;
+}
+
+.title {
+    padding: 5px;
+    color: white;
+}
+

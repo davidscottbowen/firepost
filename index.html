@@ -19,7 +19,35 @@
 
 <body>
     <div class="header">
+        <div class="row">
+            <div class="title col-md-3">
+                <h1>firepost</h1>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="login col-md-6">
+                <form>
+                    <input type="text" placeholder="Email" id="zip1">
+                    <input type="text" placeholder="Password" id="zip2">
+                    <button type="button" id="add3">Log In</button>
+                </form>
+            </div>
+        </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDSM-PoHFWCg3aTOLdFAs-jlPpdG19J0G8",
+            authDomain: "firepost-c54a6.firebaseapp.com",
+            databaseURL: "https://firepost-c54a6.firebaseio.com",
+            projectId: "firepost-c54a6",
+            storageBucket: "",
+            messagingSenderId: "489553563373"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
