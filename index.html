@@ -3,56 +3,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 
-    <title>FirePost</title>
-    <meta name="description" content="FirePost">
-    <meta name="author" content="David Scott Bowen">
+  <title>FirePost</title>
+  <meta name="description" content="FirePost">
+  <meta name="author" content="David Scott Bowen">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="row">
-            <div class="title col-md-3">
-                <h1>firepost</h1>
-            </div>
-            <div class="col-md-3"></div>
-            <div class="login col-md-6">
-                <form>
-                    <input type="text" placeholder="Email" id="zip1">
-                    <input type="text" placeholder="Password" id="zip2">
-                    <button type="button" id="add3">Log In</button>
-                </form>
-            </div>
-        </div>
+  <div class="header">
+    <div class="row">
+      <div class="title col-md-3">
+        <h1>firepost</h1>
+      </div>
+      <div class="col-md-3"></div>
+
+      <div id="top" class="col-md-6">
+        <input type="email" id="email" placeholder="Email"/> 
+        <input type="password" id="password" placeholder="Password"/>
+        <br/>
+        <button onclick="login()">Sign In</button>
+      
+      </div>
     </div>
+  </div>
 
-    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDSM-PoHFWCg3aTOLdFAs-jlPpdG19J0G8",
-            authDomain: "firepost-c54a6.firebaseapp.com",
-            databaseURL: "https://firepost-c54a6.firebaseio.com",
-            projectId: "firepost-c54a6",
-            storageBucket: "",
-            messagingSenderId: "489553563373"
-        };
-        firebase.initializeApp(config);
-    </script>
+  <div id="bottom">
+    <center> 
+    <h3>You are Logged In</h3>
+    <p id="userInfo"></p>
+    <button onclick="logout()">Sign Out</button>
+    </center>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDSM-PoHFWCg3aTOLdFAs-jlPpdG19J0G8",
+      authDomain: "firepost-c54a6.firebaseapp.com",
+      databaseURL: "https://firepost-c54a6.firebaseio.com",
+      projectId: "firepost-c54a6",
+      storageBucket: "firepost-c54a6.appspot.com",
+      messagingSenderId: "489553563373"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
