@@ -1,7 +1,7 @@
 function data() {
   var playersRef = firebase.database().ref("players/");
 
-  playersRef.set({
+  playersRef.push({
     John: {
       number: 1,
       age: 30
