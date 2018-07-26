@@ -1,32 +1,41 @@
-[debug] [2018-07-26T00:33:39.009Z] ----------------------------------------------------------------------
-[debug] [2018-07-26T00:33:39.011Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Scott\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only hosting
-[debug] [2018-07-26T00:33:39.011Z] CLI Version:   4.0.0
-[debug] [2018-07-26T00:33:39.011Z] Platform:      win32
-[debug] [2018-07-26T00:33:39.011Z] Node Version:  v10.1.0
-[debug] [2018-07-26T00:33:39.012Z] Time:          Wed Jul 25 2018 20:33:39 GMT-0400 (Eastern Daylight Time)
-[debug] [2018-07-26T00:33:39.012Z] ----------------------------------------------------------------------
+[debug] [2018-07-26T13:41:17.495Z] ----------------------------------------------------------------------
+[debug] [2018-07-26T13:41:17.501Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Engineering\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve --only hosting
+[debug] [2018-07-26T13:41:17.502Z] CLI Version:   4.0.0
+[debug] [2018-07-26T13:41:17.502Z] Platform:      win32
+[debug] [2018-07-26T13:41:17.503Z] Node Version:  v10.0.0
+[debug] [2018-07-26T13:41:17.506Z] Time:          Thu Jul 26 2018 09:41:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-07-26T13:41:17.507Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-26T00:33:39.026Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-26T00:33:39.028Z] > authorizing via signed-in user
-[debug] [2018-07-26T00:33:39.031Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/firepost-c54a6  
+[debug] [2018-07-26T13:41:17.555Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-26T13:41:17.557Z] > authorizing via signed-in user
+[debug] [2018-07-26T13:41:17.563Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-26T13:41:17.564Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/9Yc4eZ1R5-babQGnbHWd_PwIqHAtuBoCqyDmYpBiezM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Jul 26 2018 09:41:17 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-07-26T13:41:17.994Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T13:41:18.034Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/firepost-c54a6  
   
- Wed Jul 25 2018 20:33:39 GMT-0400 (Eastern Daylight Time)
-[debug] [2018-07-26T00:33:39.324Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-26T00:33:39.325Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/firepost-c54a6/tokens  
+ Thu Jul 26 2018 09:41:18 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-07-26T13:41:18.277Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T13:41:18.279Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/firepost-c54a6/tokens  
   
- Wed Jul 25 2018 20:33:39 GMT-0400 (Eastern Daylight Time)
-[debug] [2018-07-26T00:33:39.660Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-26T00:33:39.661Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/firepost-c54a6  
+ Thu Jul 26 2018 09:41:18 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-07-26T13:41:18.564Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-26T13:41:18.566Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/firepost-c54a6  
   
- Wed Jul 25 2018 20:33:39 GMT-0400 (Eastern Daylight Time)
-[debug] [2018-07-26T00:33:39.860Z] <<< HTTP RESPONSE 200
+ Thu Jul 26 2018 09:41:18 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-07-26T13:41:18.946Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Scott\Desktop\FirePost'...
+[info] === Serving from 'C:\Users\Engineering\Documents\code\firepost'...
 [info] 
-[debug] [2018-07-26T00:33:39.865Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/489553563373/clients/_:getWebAppConfig  
+[debug] [2018-07-26T13:41:18.957Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/489553563373/clients/_:getWebAppConfig  
   
- Wed Jul 25 2018 20:33:39 GMT-0400 (Eastern Daylight Time)
-[debug] [2018-07-26T00:33:40.087Z] <<< HTTP RESPONSE 200
+ Thu Jul 26 2018 09:41:18 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-07-26T13:41:19.445Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
 [info] +  hosting: Local server: http://localhost:5000
 

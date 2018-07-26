@@ -1,0 +1,7 @@
+https://firebase.google.com/docs/cli/
+
+firebase login
+
+firebase use staging
+
+firebase serve --only hosting
