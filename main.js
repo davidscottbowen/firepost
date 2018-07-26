@@ -1,3 +1,19 @@
+function data() {
+  var playersRef = firebase.database().ref("players/");
+
+  playersRef.set({
+    John: {
+      number: 1,
+      age: 30
+    },
+
+    Amanda: {
+      number: 2,
+      age: 20
+    }
+  });
+}
+
 function login() {
   var userEmail = document.getElementById("email").value;
   var userPassword = document.getElementById("password").value;
