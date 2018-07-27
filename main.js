@@ -1,10 +1,10 @@
 function data() {
+  var messagePost = document.getElementById("message").value;
+  // var messagePost = "I worked today and it sucked!!!"
   var playersRef = firebase.database().ref("journal");
 
-  playersRef.set ({
-     Day1: {
-        entry: "I hate all"
-     }
+  playersRef.push ({
+        entry: messagePost
   });
 }
 
