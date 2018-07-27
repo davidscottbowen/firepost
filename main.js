@@ -1,30 +1,3 @@
-function data() {
-  var messagePost = document.getElementById("message").value;
-  // var messagePost = "I worked today and it sucked!!!"
-  var playersRef = firebase.database().ref("journal");
-
-  playersRef.push ({
-        entry: messagePost
-  });
-}
-
-function read() {
-// some HTML element on the page
-var postElement = document.getElementById("readdata");
-
-// here I will assume that this function simply 
-// updates the contents of the element with a value
-var updateStarCount = function(element, value) {
-    element.textContent = value;
-};
-
-var starCountRef = firebase.database().ref("journal");
-starCountRef.on('value', function(snapshot) {
-    updateStarCount(postElement, snapshot.val().Day1.entry);
-});
-
-}
-
 function login() {
   var userEmail = document.getElementById("email").value;
   var userPassword = document.getElementById("password").value;
